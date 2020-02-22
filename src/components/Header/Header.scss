@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Phenomena";
+  src: local("Phenomena"),
+    url(../../Fonts/Phenomena-Regular.woff) format("woff");
+}
+
+.brand {
+  font-family: "Phenomena";
+  font-size: 2.5em;
+  letter-spacing: 0.6rem;
+  color: rgb(44, 165, 44);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5px;
+  //   height: 10vh;
+}

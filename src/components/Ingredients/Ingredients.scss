@@ -1,0 +1,45 @@
+.ingredients {
+  padding: 5% 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .content {
+    display: flex;
+    margin-top: 0.2em;
+    justify-content: space-between;
+    border-bottom: 1px solid darkgray;
+  }
+
+  .quantity {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .amount,
+  .unit,
+  .name {
+    padding-right: 5px;
+  }
+
+  .unit {
+    text-transform: lowercase;
+  }
+
+  .name {
+    flex: 3;
+    // justify-content: flex-end;
+    color: #444;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  .icon {
+    height: 1.7em;
+    margin: 0 auto;
+  }
+
+  .icon path {
+    fill: rgb(44, 165, 44);
+  }
+}

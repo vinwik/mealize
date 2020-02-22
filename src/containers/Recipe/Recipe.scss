@@ -1,0 +1,26 @@
+.recipe {
+  background-color: #e2e2e2;
+  min-height: 100vh;
+  color: black;
+
+  svg path {
+    fill: #fff;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 5% 0 5%;
+  }
+
+  @media screen and (min-width: 900px) {
+    .details,
+    .ingredients,
+    .preparation,
+    .addtocart {
+      margin: 0 auto;
+      padding: 40px 5% 0 5%;
+      max-width: 900px;
+    }
+  }
+}

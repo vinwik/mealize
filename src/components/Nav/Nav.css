@@ -1,0 +1,37 @@
+.nav {
+  background-color: #fff;
+  height: 8vh;
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px #b2b2b2;
+          box-shadow: 0 0 10px #b2b2b2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+}
+
+.nav .nav-btn {
+  height: 100%;
+}
+
+.nav .nav-icon {
+  padding: 5px 10px;
+  height: 60%;
+}
+
+@media screen and (min-width: 900px) {
+  .nav {
+    position: fixed;
+    bottom: 0;
+    width: 900px;
+    height: 8vh;
+    border-radius: 10px 10px 0 0;
+  }
+}
+/*# sourceMappingURL=Nav.css.map */

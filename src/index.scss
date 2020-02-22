@@ -1,12 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e2e2e2;
@@ -27,15 +28,12 @@ ol {
   list-style: none;
   counter-reset: my-awesome-counter;
 }
-
 ol li {
   counter-increment: my-awesome-counter;
   list-style-position: inside;
   margin-bottom: 0.5em;
 }
-
 ol li::before {
   content: counter(my-awesome-counter) ". ";
   font-weight: bold;
 }
-/*# sourceMappingURL=index.css.map */

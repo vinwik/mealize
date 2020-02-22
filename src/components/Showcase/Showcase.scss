@@ -1,0 +1,41 @@
+.showcase {
+  background: url(./recipe-img.jpg) no-repeat center/cover;
+  height: 40vh;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 0 10px #444;
+
+  .content {
+    background: radial-gradient(transparent, #222);
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .recipe-title {
+      font-size: 1.2em;
+      text-shadow: 0 0 10px #222;
+    }
+
+    .icon-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .previous-icon,
+      .like-icon {
+        height: 3em;
+        padding: 5px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .content {
+      padding: 20px 40px;
+    }
+  }
+}

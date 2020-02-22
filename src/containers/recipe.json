@@ -1,0 +1,841 @@
+{
+  "recipe": {
+    "vegetarian": false,
+    "vegan": false,
+    "glutenFree": false,
+    "dairyFree": false,
+    "veryHealthy": false,
+    "cheap": false,
+    "veryPopular": true,
+    "sustainable": false,
+    "weightWatcherSmartPoints": 17,
+    "gaps": "no",
+    "lowFodmap": false,
+    "preparationMinutes": 65,
+    "cookingMinutes": 0,
+    "sourceUrl": "http://www.olgasflavorfactory.com/main-course/poultry/chicken-spinoccoli-breaded-stuffed-chicken-breast-with-spinach-broccoli-and-cheese/",
+    "spoonacularSourceUrl": "https://spoonacular.com/chicken-spinoccoli-breaded-stuffed-chicken-breast-with-spinach-broccoli-and-cheese-485365",
+    "aggregateLikes": 653,
+    "spoonacularScore": 94,
+    "healthScore": 33,
+    "creditsText": "Olgas Flavor Factory",
+    "sourceName": "Olgas Flavor Factory",
+    "pricePerServing": 316.89,
+    "extendedIngredients": [
+      {
+        "id": 11090,
+        "aisle": "Produce",
+        "image": "broccoli.jpg",
+        "consitency": "solid",
+        "name": "broccoli",
+        "original": "2 cups broccoli, chopped",
+        "originalString": "2 cups broccoli, chopped",
+        "originalName": "broccoli, chopped",
+        "amount": 2,
+        "unit": "cups",
+        "meta": [
+          "chopped"
+        ],
+        "metaInformation": [
+          "chopped"
+        ],
+        "measures": {
+          "us": {
+            "amount": 2,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 473.176,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 1001,
+        "aisle": "Milk, Eggs, Other Dairy",
+        "image": "butter-sliced.jpg",
+        "consitency": "solid",
+        "name": "butter",
+        "original": "1 Tablespoon butter",
+        "originalString": "1 Tablespoon butter",
+        "originalName": "butter",
+        "amount": 1,
+        "unit": "Tablespoon",
+        "meta": [],
+        "metaInformation": [],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "Tbsp",
+            "unitLong": "Tbsp"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "Tbsp",
+            "unitLong": "Tbsp"
+          }
+        }
+      },
+      {
+        "id": 1017,
+        "aisle": "Cheese",
+        "image": "cream-cheese.jpg",
+        "consitency": "solid",
+        "name": "cream cheese",
+        "original": "4 oz. cream cheese, softened",
+        "originalString": "4 oz. cream cheese, softened",
+        "originalName": "cream cheese, softened",
+        "amount": 4,
+        "unit": "oz",
+        "meta": [
+          "softened"
+        ],
+        "metaInformation": [
+          "softened"
+        ],
+        "measures": {
+          "us": {
+            "amount": 4,
+            "unitShort": "oz",
+            "unitLong": "ounces"
+          },
+          "metric": {
+            "amount": 113.398,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 1123,
+        "aisle": "Milk, Eggs, Other Dairy",
+        "image": "egg.png",
+        "consitency": "solid",
+        "name": "eggs",
+        "original": "2 eggs, plus 2 Tablespoons water",
+        "originalString": "2 eggs, plus 2 Tablespoons water",
+        "originalName": "eggs, plus 2 Tablespoons water",
+        "amount": 2,
+        "unit": "",
+        "meta": [],
+        "metaInformation": [],
+        "measures": {
+          "us": {
+            "amount": 2,
+            "unitShort": "",
+            "unitLong": ""
+          },
+          "metric": {
+            "amount": 2,
+            "unitShort": "",
+            "unitLong": ""
+          }
+        }
+      },
+      {
+        "id": 1019,
+        "aisle": "Cheese",
+        "image": "feta.png",
+        "consitency": "solid",
+        "name": "feta cheese",
+        "original": "¼ cup feta cheese, softened",
+        "originalString": "¼ cup feta cheese, softened",
+        "originalName": "feta cheese, softened",
+        "amount": 0.25,
+        "unit": "cup",
+        "meta": [
+          "softened"
+        ],
+        "metaInformation": [
+          "softened"
+        ],
+        "measures": {
+          "us": {
+            "amount": 0.25,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 59.147,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 20081,
+        "aisle": "Baking",
+        "image": "flour.png",
+        "consitency": "solid",
+        "name": "flour",
+        "original": "½ cup flour",
+        "originalString": "½ cup flour",
+        "originalName": "flour",
+        "amount": 0.5,
+        "unit": "cup",
+        "meta": [],
+        "metaInformation": [],
+        "measures": {
+          "us": {
+            "amount": 0.5,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 118.294,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 11215,
+        "aisle": "Produce",
+        "image": "garlic.jpg",
+        "consitency": "solid",
+        "name": "garlic cloves",
+        "original": "2 garlic cloves, minced",
+        "originalString": "2 garlic cloves, minced",
+        "originalName": "garlic cloves, minced",
+        "amount": 2,
+        "unit": "",
+        "meta": [
+          "minced"
+        ],
+        "metaInformation": [
+          "minced"
+        ],
+        "measures": {
+          "us": {
+            "amount": 2,
+            "unitShort": "",
+            "unitLong": ""
+          },
+          "metric": {
+            "amount": 2,
+            "unitShort": "",
+            "unitLong": ""
+          }
+        }
+      },
+      {
+        "id": 4582,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "vegetable-oil.jpg",
+        "consitency": "liquid",
+        "name": "oil",
+        "original": "¾ cup oil (vegetable or canola) for frying",
+        "originalString": "¾ cup oil (vegetable or canola) for frying",
+        "originalName": "oil (vegetable or canola) for frying",
+        "amount": 0.75,
+        "unit": "cup",
+        "meta": [
+          "for frying",
+          "(vegetable or canola)"
+        ],
+        "metaInformation": [
+          "for frying",
+          "(vegetable or canola)"
+        ],
+        "measures": {
+          "us": {
+            "amount": 0.75,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 177.441,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 11282,
+        "aisle": "Produce",
+        "image": "brown-onion.png",
+        "consitency": "solid",
+        "name": "onion",
+        "original": "1 onion, chopped",
+        "originalString": "1 onion, chopped",
+        "originalName": "onion, chopped",
+        "amount": 1,
+        "unit": "",
+        "meta": [
+          "chopped"
+        ],
+        "metaInformation": [
+          "chopped"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "",
+            "unitLong": ""
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "",
+            "unitLong": ""
+          }
+        }
+      },
+      {
+        "id": 10018079,
+        "aisle": "Bakery/Bread;Ethnic Foods;Oil, Vinegar, Salad Dressing;Baking",
+        "image": "panko.jpg",
+        "consitency": "solid",
+        "name": "panko bread crumbs",
+        "original": "1¼ cups panko bread crumbs",
+        "originalString": "1¼ cups panko bread crumbs",
+        "originalName": "panko bread crumbs",
+        "amount": 1.25,
+        "unit": "cups",
+        "meta": [],
+        "metaInformation": [],
+        "measures": {
+          "us": {
+            "amount": 1.25,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 295.735,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consitency": "solid",
+        "name": "salt",
+        "original": "salt, pepper",
+        "originalString": "salt, pepper",
+        "originalName": "salt, pepper",
+        "amount": 4,
+        "unit": "servings",
+        "meta": [],
+        "metaInformation": [],
+        "measures": {
+          "us": {
+            "amount": 4,
+            "unitShort": "servings",
+            "unitLong": "servings"
+          },
+          "metric": {
+            "amount": 4,
+            "unitShort": "servings",
+            "unitLong": "servings"
+          }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consitency": "solid",
+        "name": "salt",
+        "original": "salt, pepper to taste",
+        "originalString": "salt, pepper to taste",
+        "originalName": "salt, pepper to taste",
+        "amount": 4,
+        "unit": "servings",
+        "meta": [
+          "to taste"
+        ],
+        "metaInformation": [
+          "to taste"
+        ],
+        "measures": {
+          "us": {
+            "amount": 4,
+            "unitShort": "servings",
+            "unitLong": "servings"
+          },
+          "metric": {
+            "amount": 4,
+            "unitShort": "servings",
+            "unitLong": "servings"
+          }
+        }
+      },
+      {
+        "id": 1001026,
+        "aisle": "Cheese",
+        "image": "shredded-cheese-white.jpg",
+        "consitency": "solid",
+        "name": "shredded mozzarella",
+        "original": "1 cup finely shredded Mozzarella",
+        "originalString": "1 cup finely shredded Mozzarella",
+        "originalName": "finely shredded Mozzarella",
+        "amount": 1,
+        "unit": "cup",
+        "meta": [
+          "shredded",
+          "finely"
+        ],
+        "metaInformation": [
+          "shredded",
+          "finely"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "cup",
+            "unitLong": "cup"
+          },
+          "metric": {
+            "amount": 236.588,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 1055062,
+        "aisle": "Meat",
+        "image": "chicken-breasts.png",
+        "consitency": "solid",
+        "name": "skinless boneless chicken breasts",
+        "original": "4 boneless, skinless chicken breasts",
+        "originalString": "4 boneless, skinless chicken breasts",
+        "originalName": "boneless, skinless chicken breasts",
+        "amount": 4,
+        "unit": "",
+        "meta": [
+          "boneless",
+          "skinless"
+        ],
+        "metaInformation": [
+          "boneless",
+          "skinless"
+        ],
+        "measures": {
+          "us": {
+            "amount": 4,
+            "unitShort": "",
+            "unitLong": ""
+          },
+          "metric": {
+            "amount": 4,
+            "unitShort": "",
+            "unitLong": ""
+          }
+        }
+      },
+      {
+        "id": 10011457,
+        "aisle": "Produce",
+        "image": "spinach.jpg",
+        "consitency": "solid",
+        "name": "spinach",
+        "original": "2 cups spinach",
+        "originalString": "2 cups spinach",
+        "originalName": "spinach",
+        "amount": 2,
+        "unit": "cups",
+        "meta": [],
+        "metaInformation": [],
+        "measures": {
+          "us": {
+            "amount": 2,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 473.176,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 11955,
+        "aisle": "Canned and Jarred;Produce",
+        "image": "sundried-tomatoes.jpg",
+        "consitency": "solid",
+        "name": "sun-dried tomatoes",
+        "original": "4 Tablespoons sun dried tomatoes, minced",
+        "originalString": "4 Tablespoons sun dried tomatoes, minced",
+        "originalName": "sun dried tomatoes, minced",
+        "amount": 4,
+        "unit": "Tablespoons",
+        "meta": [
+          "dried",
+          "minced"
+        ],
+        "metaInformation": [
+          "dried",
+          "minced"
+        ],
+        "measures": {
+          "us": {
+            "amount": 4,
+            "unitShort": "Tbsps",
+            "unitLong": "Tbsps"
+          },
+          "metric": {
+            "amount": 4,
+            "unitShort": "Tbsps",
+            "unitLong": "Tbsps"
+          }
+        }
+      },
+      {
+        "id": 14106,
+        "aisle": "Alcoholic Beverages",
+        "image": "white-wine.jpg",
+        "consitency": "liquid",
+        "name": "white wine",
+        "original": "2 Tablespoons white wine",
+        "originalString": "2 Tablespoons white wine",
+        "originalName": "white wine",
+        "amount": 2,
+        "unit": "Tablespoons",
+        "meta": [
+          "white"
+        ],
+        "metaInformation": [
+          "white"
+        ],
+        "measures": {
+          "us": {
+            "amount": 2,
+            "unitShort": "Tbsps",
+            "unitLong": "Tbsps"
+          },
+          "metric": {
+            "amount": 2,
+            "unitShort": "Tbsps",
+            "unitLong": "Tbsps"
+          }
+        }
+      }
+    ],
+    "id": 485365,
+    "title": "Chicken Spinoccoli – Breaded Stuffed Chicken Breast With Spinach, Broccoli and Cheese",
+    "readyInMinutes": 65,
+    "servings": 4,
+    "image": "https://spoonacular.com/recipeImages/485365-556x370.jpg",
+    "imageType": "jpg",
+    "cuisines": [],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "diets": [],
+    "occasions": [],
+    "winePairing": {},
+    "instructions": "Pound the chicken to an even thickness. Season with salt and pepper on both sides. Prep the rest of the ingredients.Heat the butter in a skillet on medium high heat until melted. Add the onion, cook for about 5 minutes, add the garlic and cook for another 30 seconds or so.Add the spinach and white wine. Cook for about a minute until the spinach wilts.You can also use thawed, frozen spinach instead of fresh, but you will only need a small amount, since the spinach is already wilted. Make sure to squeeze out as much liquid as possible from the spinach first, before adding it to the onions.Add the broccoli, season with salt and pepper, cook for about 2 minutes, until the broccoli is slightly softened, but still crunchy. Set aside to cool.Use a rubber spatula or wooden spoon to mix up the cream cheese. It should be really easy to do because the cream cheese needs to be softened.Add the rest of the ingredients. Mix to combine.Spread  of the cheese filling on one of the flattened chicken breasts. Spread it out evenly, leaving a border free around the edges. Top with part of the stuffing.Roll up the chicken breast tucking in the sides into the center of the rolled chicken.Roll up the chicken breast tucking in the sides into the center of the rolled chicken.Fill and stuff the rest of the chicken breasts. Roll up the stuffed chicken breasts tightly inside aluminum foil. Refrigerate for at least 1 hour.Preheat the oven to 400 degrees Fahrenheit.Prep the breading station. Place the flour and breadcrumbs into separate plates. Whisk up the eggs and water in another plate.Dredge the chicken in the flour, then in the egg wash and then in the breadcrumbs.Heat up  cup oil in a 10 inch skillet on medium high heat, until the oil is hot ans shimmering. Add the chicken to the oil and cook for about 1-2 minutes on all 4 sides, until the chicken is golden brown on all sides.Place the chicken on top of a rack on a rimmed baking sheet. Roast in the oven until the chicken reaches 160 degrees on an instant read thermometer.Let the chicken rest for at least 5 minutes, then slice into pieces.",
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "Pound the chicken to an even thickness. Season with salt and pepper on both sides. Prep the rest of the ingredients.",
+            "ingredients": [
+              {
+                "id": 1102047,
+                "name": "salt and pepper",
+                "image": "salt-and-pepper.jpg"
+              }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 2,
+            "step": "Heat the butter in a skillet on medium high heat until melted.",
+            "ingredients": [
+              {
+                "id": 1001,
+                "name": "butter",
+                "image": "butter-sliced.jpg"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404645,
+                "name": "frying pan",
+                "image": "pan.png"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "step": "Add the onion, cook for about 5 minutes, add the garlic and cook for another 30 seconds or so.",
+            "ingredients": [
+              {
+                "id": 11215,
+                "name": "garlic",
+                "image": "garlic.png"
+              },
+              {
+                "id": 11282,
+                "name": "onion",
+                "image": "brown-onion.png"
+              }
+            ],
+            "equipment": [],
+            "length": {
+              "number": 5,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 4,
+            "step": "Add the spinach and white wine. Cook for about a minute until the spinach wilts.You can also use thawed, frozen spinach instead of fresh, but you will only need a small amount, since the spinach is already wilted. Make sure to squeeze out as much liquid as possible from the spinach first, before adding it to the onions.",
+            "ingredients": [
+              {
+                "id": 14106,
+                "name": "white wine",
+                "image": "white-wine.jpg"
+              },
+              {
+                "id": 10011457,
+                "name": "spinach",
+                "image": "spinach.jpg"
+              },
+              {
+                "id": 11282,
+                "name": "onion",
+                "image": "brown-onion.png"
+              }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 5,
+            "step": "Add the broccoli, season with salt and pepper, cook for about 2 minutes, until the broccoli is slightly softened, but still crunchy. Set aside to cool.Use a rubber spatula or wooden spoon to mix up the cream cheese. It should be really easy to do because the cream cheese needs to be softened.",
+            "ingredients": [
+              {
+                "id": 1102047,
+                "name": "salt and pepper",
+                "image": "salt-and-pepper.jpg"
+              },
+              {
+                "id": 1017,
+                "name": "cream cheese",
+                "image": "cream-cheese.jpg"
+              },
+              {
+                "id": 11090,
+                "name": "broccoli",
+                "image": "broccoli.jpg"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404732,
+                "name": "wooden spoon",
+                "image": "wooden-spoon.jpg"
+              },
+              {
+                "id": 404642,
+                "name": "spatula",
+                "image": "spatula-or-turner.jpg"
+              }
+            ],
+            "length": {
+              "number": 2,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 6,
+            "step": "Add the rest of the ingredients.",
+            "ingredients": [],
+            "equipment": []
+          },
+          {
+            "number": 7,
+            "step": "Mix to combine.",
+            "ingredients": [],
+            "equipment": []
+          },
+          {
+            "number": 8,
+            "step": "Spread  of the cheese filling on one of the flattened chicken breasts.",
+            "ingredients": [
+              {
+                "id": 5062,
+                "name": "chicken breast",
+                "image": "chicken-breasts.png"
+              }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 9,
+            "step": "Spread it out evenly, leaving a border free around the edges. Top with part of the stuffing.",
+            "ingredients": [],
+            "equipment": []
+          },
+          {
+            "number": 10,
+            "step": "Roll up the chicken breast tucking in the sides into the center of the rolled chicken.",
+            "ingredients": [
+              {
+                "id": 5062,
+                "name": "chicken breast",
+                "image": "chicken-breasts.png"
+              }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 11,
+            "step": "Roll up the chicken breast tucking in the sides into the center of the rolled chicken.Fill and stuff the rest of the chicken breasts.",
+            "ingredients": [
+              {
+                "id": 5062,
+                "name": "chicken breast",
+                "image": "chicken-breasts.png"
+              }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 12,
+            "step": "Roll up the stuffed chicken breasts tightly inside aluminum foil. Refrigerate for at least 1 hour.Preheat the oven to 400 degrees Fahrenheit.Prep the breading station.",
+            "ingredients": [],
+            "equipment": [
+              {
+                "id": 404765,
+                "name": "aluminum foil",
+                "image": "aluminum-foil.png"
+              },
+              {
+                "id": 404784,
+                "name": "oven",
+                "image": "oven.jpg",
+                "temperature": {
+                  "number": 400,
+                  "unit": "Fahrenheit"
+                }
+              }
+            ]
+          },
+          {
+            "number": 13,
+            "step": "Place the flour and breadcrumbs into separate plates.",
+            "ingredients": [
+              {
+                "id": 18079,
+                "name": "breadcrumbs",
+                "image": "breadcrumbs.jpg"
+              },
+              {
+                "id": 20081,
+                "name": "all purpose flour",
+                "image": "flour.png"
+              }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 14,
+            "step": "Whisk up the eggs and water in another plate.Dredge the chicken in the flour, then in the egg wash and then in the breadcrumbs.",
+            "ingredients": [
+              {
+                "id": 18079,
+                "name": "breadcrumbs",
+                "image": "breadcrumbs.jpg"
+              },
+              {
+                "id": 20081,
+                "name": "all purpose flour",
+                "image": "flour.png"
+              },
+              {
+                "id": 1123,
+                "name": "egg",
+                "image": "egg.png"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404661,
+                "name": "whisk",
+                "image": "whisk.png"
+              }
+            ]
+          },
+          {
+            "number": 15,
+            "step": "Heat up  cup oil in a 10 inch skillet on medium high heat, until the oil is hot ans shimmering.",
+            "ingredients": [
+              {
+                "id": 4582,
+                "name": "cooking oil",
+                "image": "vegetable-oil.jpg"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404645,
+                "name": "frying pan",
+                "image": "pan.png"
+              }
+            ]
+          },
+          {
+            "number": 16,
+            "step": "Add the chicken to the oil and cook for about 1-2 minutes on all 4 sides, until the chicken is golden brown on all sides.",
+            "ingredients": [
+              {
+                "id": 4582,
+                "name": "cooking oil",
+                "image": "vegetable-oil.jpg"
+              }
+            ],
+            "equipment": [],
+            "length": {
+              "number": 2,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 17,
+            "step": "Place the chicken on top of a rack on a rimmed baking sheet. Roast in the oven until the chicken reaches 160 degrees on an instant read thermometer.",
+            "ingredients": [],
+            "equipment": [
+              {
+                "id": 404727,
+                "name": "baking sheet",
+                "image": "baking-sheet.jpg"
+              },
+              {
+                "id": 404789,
+                "name": "kitchen thermometer",
+                "image": "food-thermometer.jpg"
+              },
+              {
+                "id": 404784,
+                "name": "oven",
+                "image": "oven.jpg"
+              }
+            ]
+          },
+          {
+            "number": 18,
+            "step": "Let the chicken rest for at least 5 minutes, then slice into pieces.",
+            "ingredients": [],
+            "equipment": [],
+            "length": {
+              "number": 5,
+              "unit": "minutes"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

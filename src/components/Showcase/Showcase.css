@@ -1,0 +1,56 @@
+.showcase {
+  background: url(./recipe-img.jpg) no-repeat center/cover;
+  height: 40vh;
+  width: 100%;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px #444;
+          box-shadow: 0 0 10px #444;
+}
+
+.showcase .content {
+  background: radial-gradient(transparent, #222);
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.showcase .content .recipe-title {
+  font-size: 1.2em;
+  text-shadow: 0 0 10px #222;
+}
+
+.showcase .content .icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.showcase .content .icon-wrapper .previous-icon,
+.showcase .content .icon-wrapper .like-icon {
+  height: 3em;
+  padding: 5px;
+}
+
+@media screen and (min-width: 900px) {
+  .showcase .content {
+    padding: 20px 40px;
+  }
+}
+/*# sourceMappingURL=Showcase.css.map */

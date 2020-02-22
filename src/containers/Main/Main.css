@@ -1,0 +1,68 @@
+.main {
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.main .cards::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .main .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: unset;
+    -ms-overflow-style: unset;
+    margin-bottom: 9vh;
+  }
+  .main .cards::-webkit-scrollbar {
+    display: block;
+  }
+}
+
+svg path {
+  fill: #fff;
+}
+
+.search-icon path,
+.times-icon path,
+.nav-icon path {
+  fill: #888;
+}
+
+/* Flex column space between 2 times */
+/*# sourceMappingURL=Main.css.map */

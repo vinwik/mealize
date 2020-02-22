@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "Time.scss"
+    ],
+    "names": [],
+    "file": "Time.css"
+}

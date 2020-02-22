@@ -1,0 +1,51 @@
+.main {
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: unset;
+      -ms-overflow-style: unset;
+      margin-bottom: 9vh;
+
+      &::-webkit-scrollbar {
+        display: block;
+      }
+    }
+  }
+}
+
+svg path {
+  fill: #fff;
+}
+
+.search-icon path,
+.times-icon path,
+.nav-icon path {
+  fill: #888;
+}
+/* Flex column space between 2 times */

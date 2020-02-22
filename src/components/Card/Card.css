@@ -1,0 +1,88 @@
+.card {
+  background: no-repeat center center/cover;
+  margin: 10px 10px 10px 5%;
+  width: 65vw;
+  height: 70vh;
+  border-radius: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-shadow: 0 0 10px #b2b2b2;
+          box-shadow: 0 0 10px #b2b2b2;
+  position: relative;
+  z-index: 0;
+}
+
+.card .content {
+  background: radial-gradient(transparent, #222);
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .content .recipe-title {
+  font-size: 1.4em;
+}
+
+.card .content .like-icon {
+  height: 10%;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  z-index: 10;
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    margin: 10px;
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+    position: relative;
+    z-index: 0;
+  }
+  .card .content {
+    background-color: rgba(34, 34, 34, 0);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .card .content:hover {
+    background-color: rgba(34, 34, 34, 0.6);
+  }
+  .card .content .recipe-title {
+    font-size: 1em;
+  }
+  .card .content .like-icon {
+    height: 1em;
+    padding: 0;
+    z-index: 10;
+  }
+}
+/*# sourceMappingURL=Card.css.map */

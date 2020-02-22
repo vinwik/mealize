@@ -1,0 +1,15 @@
+.serving {
+  .serving-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      height: 1.4em;
+      margin: 0 auto;
+    }
+    .icon path {
+      fill: rgb(44, 165, 44);
+    }
+  }
+}
