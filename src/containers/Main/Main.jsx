@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Header from "../../components/Header/Header";
 import Search from "../../components/Search/Search";
 import Card from "../../components/Card/Card";
-import Nav from "../../components/Nav/Nav";
 import "./Main.css";
 
 const API_KEY = "a8a6c56864bd498da56e9de550c0a580";
@@ -42,7 +41,6 @@ class Main extends Component {
         <Header className="header" />
         <Search getRecipes={this.getRecipes} className="search" />
         <Card recipes={this.state.recipes} className="cards" />
-        <Nav className="nav" />
       </main>
     );
   }

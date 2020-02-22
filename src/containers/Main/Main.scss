@@ -1,12 +1,13 @@
 .main {
-  min-height: 100vh;
+  // min-height: 92vh;
   font-size: calc(10px + 2vmin);
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
 
   .cards {
+    padding: 2vh 0;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;

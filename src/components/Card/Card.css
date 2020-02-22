@@ -1,8 +1,8 @@
 .card {
   background: no-repeat center center/cover;
-  margin: 10px 10px 10px 5%;
+  margin: 0 0 0 5%;
   width: 65vw;
-  height: 70vh;
+  height: 73vh;
   border-radius: 25px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
