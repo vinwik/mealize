@@ -1,19 +1,38 @@
 /*--- VARIABLES ---*/
 :root {
+  //COLORS
   --main-bg-color: #fff;
   --main-color: #333;
   --secondary-color: #e6e6e6;
+
+  //HOVER
   --opacity: 0.7;
+
+  //TRANSITION
   --transition: all 0.2s ease-in-out;
 }
 
+// FLEX
+@mixin flex-row {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*--- FONTS ---*/
-@font-face {}/*--- RESET ---*/
+@font-face {
+}
+
+/*--- RESET ---*/
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 button,
@@ -26,7 +45,6 @@ input[type="reset"] {
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  -webkit-transition: opactiy 0.2s ease-in-out;
   transition: opactiy 0.2s ease-in-out;
 }
 
@@ -37,7 +55,6 @@ button:hover {
 a {
   text-decoration: none;
   color: inherit;
-  -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -54,11 +71,14 @@ svg path {
 }
 
 /*--- GLOBAL CLASSES ---*/
+
 .container {
   margin: 0 auto;
   padding: 1em;
   max-width: 1200px;
 }
+
+// BUTTONS
 
 .light-btn {
   padding: 0.5em 1em;
@@ -70,16 +90,11 @@ svg path {
   background-color: var(--main-color);
   border: 1px solid var(--main-color);
   color: var(--main-bg-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+  @include flex-row;
 
-.dark-btn .btn-icon path {
-  fill: var(--main-bg-color);
+  .btn-icon path {
+    fill: var(--main-bg-color);
+  }
 }
 
 *:disabled {
@@ -92,9 +107,10 @@ svg path {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #cecece;
 }
-/*# sourceMappingURL=index.css.map */
