@@ -15,7 +15,7 @@ function App() {
   return (
     <RecipesProvider>
       <RecipeProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route exact path="/" component={Main} />
             <Route path="/recipe" component={Recipe} />
