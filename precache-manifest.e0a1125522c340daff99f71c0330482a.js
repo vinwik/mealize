@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74001f1dd1de8a5cb839d9e40c177ba6",
+    "revision": "ce4a9cf26cb53af9817dc89fc0d0699d",
     "url": "/mealize/index.html"
   },
   {
-    "revision": "e5236815776c86611e50",
-    "url": "/mealize/static/css/main.2add6434.chunk.css"
+    "revision": "9566e543ab0a92151ac6",
+    "url": "/mealize/static/css/main.770e720d.chunk.css"
   },
   {
-    "revision": "9244c6e42927e56a0915",
-    "url": "/mealize/static/js/2.64184ee6.chunk.js"
+    "revision": "3aa7f1526dd88a9174e9",
+    "url": "/mealize/static/js/2.f8068632.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/mealize/static/js/2.64184ee6.chunk.js.LICENSE.txt"
+    "url": "/mealize/static/js/2.f8068632.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e5236815776c86611e50",
-    "url": "/mealize/static/js/main.1e4accf8.chunk.js"
+    "revision": "9566e543ab0a92151ac6",
+    "url": "/mealize/static/js/main.46c5b02a.chunk.js"
   },
   {
     "revision": "764b36c6de2c3601dd99",
     "url": "/mealize/static/js/runtime-main.4271b114.js"
+  },
+  {
+    "revision": "15a6a8659d93699123845701ed8c4b01",
+    "url": "/mealize/static/media/Phenomena-Bold.15a6a865.woff"
   },
   {
     "revision": "8ece02dc5fbc62640dc0b4e6a345e2d8",
@@ -46,10 +50,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3703a6722e42c61c004f2d7945d44d24",
     "url": "/mealize/static/media/plus-square.3703a672.svg"
-  },
-  {
-    "revision": "bc5ac52853e8a657b3258b7cd2dc0299",
-    "url": "/mealize/static/media/recipe-img.bc5ac528.jpg"
   },
   {
     "revision": "55473c271992498166a1e0682f38d393",

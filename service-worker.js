@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mealize/precache-manifest.0c453694d3b304b80662603f95a9cb01.js"
+  "/mealize/precache-manifest.e0a1125522c340daff99f71c0330482a.js"
 );
 
 self.addEventListener('message', (event) => {

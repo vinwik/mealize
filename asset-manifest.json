@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/mealize/static/css/main.2add6434.chunk.css",
-    "main.js": "/mealize/static/js/main.1e4accf8.chunk.js",
-    "main.js.map": "/mealize/static/js/main.1e4accf8.chunk.js.map",
+    "main.css": "/mealize/static/css/main.770e720d.chunk.css",
+    "main.js": "/mealize/static/js/main.46c5b02a.chunk.js",
+    "main.js.map": "/mealize/static/js/main.46c5b02a.chunk.js.map",
     "runtime-main.js": "/mealize/static/js/runtime-main.4271b114.js",
     "runtime-main.js.map": "/mealize/static/js/runtime-main.4271b114.js.map",
-    "static/js/2.64184ee6.chunk.js": "/mealize/static/js/2.64184ee6.chunk.js",
-    "static/js/2.64184ee6.chunk.js.map": "/mealize/static/js/2.64184ee6.chunk.js.map",
+    "static/js/2.f8068632.chunk.js": "/mealize/static/js/2.f8068632.chunk.js",
+    "static/js/2.f8068632.chunk.js.map": "/mealize/static/js/2.f8068632.chunk.js.map",
     "index.html": "/mealize/index.html",
-    "precache-manifest.0c453694d3b304b80662603f95a9cb01.js": "/mealize/precache-manifest.0c453694d3b304b80662603f95a9cb01.js",
+    "precache-manifest.e0a1125522c340daff99f71c0330482a.js": "/mealize/precache-manifest.e0a1125522c340daff99f71c0330482a.js",
     "service-worker.js": "/mealize/service-worker.js",
-    "static/css/main.2add6434.chunk.css.map": "/mealize/static/css/main.2add6434.chunk.css.map",
-    "static/js/2.64184ee6.chunk.js.LICENSE.txt": "/mealize/static/js/2.64184ee6.chunk.js.LICENSE.txt",
-    "static/media/Header.css": "/mealize/static/media/Phenomena-Regular.8ece02dc.woff",
+    "static/css/main.770e720d.chunk.css.map": "/mealize/static/css/main.770e720d.chunk.css.map",
+    "static/js/2.f8068632.chunk.js.LICENSE.txt": "/mealize/static/js/2.f8068632.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/mealize/static/media/Phenomena-Bold.15a6a865.woff",
+    "static/media/Phenomena-Regular.woff": "/mealize/static/media/Phenomena-Regular.8ece02dc.woff",
     "static/media/angle-left.60f083e8.svg": "/mealize/static/media/angle-left.60f083e8.svg",
     "static/media/file-alt.af630b38.svg": "/mealize/static/media/file-alt.af630b38.svg",
     "static/media/heart.27b40c8c.svg": "/mealize/static/media/heart.27b40c8c.svg",
     "static/media/minus-square.a14598e0.svg": "/mealize/static/media/minus-square.a14598e0.svg",
     "static/media/plus-square.3703a672.svg": "/mealize/static/media/plus-square.3703a672.svg",
-    "static/media/Showcase.css": "/mealize/static/media/recipe-img.bc5ac528.jpg",
     "static/media/search.55473c27.svg": "/mealize/static/media/search.55473c27.svg",
     "static/media/shopping-cart.24d28d04.svg": "/mealize/static/media/shopping-cart.24d28d04.svg",
     "static/media/times.fe210022.svg": "/mealize/static/media/times.fe210022.svg",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4271b114.js",
-    "static/js/2.64184ee6.chunk.js",
-    "static/css/main.2add6434.chunk.css",
-    "static/js/main.1e4accf8.chunk.js"
+    "static/js/2.f8068632.chunk.js",
+    "static/css/main.770e720d.chunk.css",
+    "static/js/main.46c5b02a.chunk.js"
   ]
 }
