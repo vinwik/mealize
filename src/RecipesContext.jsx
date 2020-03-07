@@ -9,6 +9,10 @@ class RecipesProvider extends Component {
     recipes: []
   };
 
+  handleChange() {
+    console.log("click");
+  }
+
   getRecipes = async e => {
     const searchInput = e.target.elements.searchInput.value;
     e.preventDefault();
@@ -18,15 +22,26 @@ class RecipesProvider extends Component {
     );
 
     const data = await response.json();
+    console.log(data.results);
     this.setState(() => {
       return { recipes: data.results };
     });
   };
 
-  // componentDidUpdate = () => {
-  //   const recipes = JSON.stringify(this.state.recipes);
-  //   localStorage.setItem("recipes", recipes);
-  // };
+  //GET SEARCH FROM LOCAL STORAGE
+  componentDidMount = () => {
+    const json = localStorage.getItem("search");
+    if (json != null) {
+      const recipes = JSON.parse(json);
+      this.setState({ recipes });
+    }
+  };
+
+  //SET SEARCH TO LOCAL STORAGE
+  componentDidUpdate = () => {
+    const recipes = JSON.stringify(this.state.recipes);
+    localStorage.setItem("search", recipes);
+  };
 
   render() {
     return (

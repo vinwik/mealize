@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Header from "./Header";
 import Search from "./Search";
 import CardList from "./CardList";
 
@@ -11,8 +12,9 @@ class Main extends Component {
         {value => {
           return (
             <div className="main">
+              <Header title="mealize" />
               <Search searchTitle="Search Recipe..." />
-              <CardList />
+              <CardList className="cards" />
             </div>
           );
         }}

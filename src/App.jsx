@@ -5,6 +5,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Main from "./components/Main";
 import Recipe from "./components/Recipe";
+import Favourites from "./components/Favourites";
 import Cart from "./components/Cart";
 
 import { RecipesProvider } from "./RecipesContext";
@@ -18,7 +19,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Main} />
             <Route path="/recipe" component={Recipe} />
-            {/* <Route path="/favourites" component={Favourites} /> */}
+            <Route path="/favourites" component={Favourites} />
             <Route path="/cart" component={Cart} />
           </Switch>
           <NavBar />
