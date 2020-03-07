@@ -16,9 +16,9 @@ const Cart = () => {
     <div className="cart">
       <Header title="Cart" />
       {context.cart.map(ingredient => {
-        const name = ingredient.name;
+        const id = ingredient.id;
         return (
-          <div className="ingredient" key={name}>
+          <div className="ingredient" key={id}>
             <div className="content">
               <div className="img">
                 <img
@@ -28,7 +28,7 @@ const Cart = () => {
               </div>
               <h3 className="name">{ingredient.name}</h3>
             </div>
-            <button onClick={() => context.removeFromCart(name)}>
+            <button onClick={() => context.removeFromCart(id)}>
               <Minus />
             </button>
           </div>

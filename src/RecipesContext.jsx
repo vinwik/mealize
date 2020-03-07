@@ -9,10 +9,6 @@ class RecipesProvider extends Component {
     recipes: []
   };
 
-  handleChange() {
-    console.log("click");
-  }
-
   getRecipes = async e => {
     const searchInput = e.target.elements.searchInput.value;
     e.preventDefault();
@@ -22,7 +18,7 @@ class RecipesProvider extends Component {
     );
 
     const data = await response.json();
-    console.log(data.results);
+
     this.setState(() => {
       return { recipes: data.results };
     });

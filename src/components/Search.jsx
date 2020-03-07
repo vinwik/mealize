@@ -2,13 +2,10 @@ import React from "react";
 // import styled from "styled-components";
 
 import { ReactComponent as Magnifier } from "../assets/search.svg";
-import { ReactComponent as Times } from "../assets/times.svg";
+// import { ReactComponent as Times } from "../assets/times.svg";
 import { RecipesConsumer } from "../RecipesContext";
 
 const Search = props => {
-  // const click = () => {
-  //   consol
-  // }
   return (
     <RecipesConsumer>
       {value => {
@@ -21,7 +18,7 @@ const Search = props => {
               placeholder={props.searchTitle}
               className="search-input"
             />
-            <Times className="times-icon" />
+            {/* <Times className="times-icon" /> */}
           </form>
         );
       }}

@@ -13,7 +13,6 @@ const Favourites = () => {
     //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log(context);
   return (
     <div className="favourites">
       <Header title="Favourites" />

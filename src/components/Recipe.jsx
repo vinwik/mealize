@@ -17,12 +17,6 @@ class Recipe extends Component {
     this.context.getRecipe(id); //fires fetch in RecipeContext
     this.context.parseIngredients(); //fires fetch in RecipeContext
     this.context.parseFavourites(); //fires fetch in RecipeContext
-    console.log(this.context);
-  }
-
-  componentDidUpdate() {
-    // this.context.setFavourites();
-    // this.context.setIngredients();
   }
 
   getIngredientList = ingredients => {
@@ -39,6 +33,13 @@ class Recipe extends Component {
       }
     });
 
+    ingredients.forEach(ingredient => {
+      const inCart = this.context.cart.find(l => l.id === ingredient.id);
+      if (inCart) {
+        ingredient.inCart = true;
+      }
+    });
+
     return list;
   };
 
@@ -46,15 +47,13 @@ class Recipe extends Component {
     return (
       <RecipeConsumer>
         {value => {
-          console.log(value.cart);
-
           const recipe = value.recipe;
           const ingredients = this.getIngredientList(
             recipe.extendedIngredients
           );
           const steps = value.recipe.steps;
           const id = recipe.id;
-          const cart = value.cart;
+
           return (
             <div className="recipe">
               <div
@@ -93,9 +92,9 @@ class Recipe extends Component {
               <div className="ingredients">
                 <h3>Ingredients</h3>
                 {ingredients.map(ingredient => {
-                  const name = ingredient.name;
+                  const id = ingredient.id;
                   return (
-                    <div className="ingredient" key={name}>
+                    <div className="ingredient" key={id}>
                       <div>
                         <span>{ingredient.amount + " "}</span>
                         <span>{ingredient.measures.us.unitShort + " "}</span>
@@ -105,7 +104,7 @@ class Recipe extends Component {
                       </div>
                       <button
                         onClick={() => {
-                          value.addToCart(name);
+                          value.addToCart(id);
                         }}
                         disabled={ingredient.inCart ? true : false}
                       >

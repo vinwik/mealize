@@ -18,12 +18,13 @@ class RecipeProvider extends Component {
 
   //Fired by Recipe.jsx
   getRecipe = async id => {
-    //GET RECIPE FROM SESSION STORAGE
+    //GET RECIPE FROM LOCAL STORAGE
     if (localStorage.getItem(id) != null) {
       const json = localStorage.getItem(id);
       const recipe = JSON.parse(json);
       this.setState({ recipe });
-    } else if (sessionStorage.getItem(id) != null) {
+    } //GET RECIPE FROM SESSION STORAGE
+    else if (sessionStorage.getItem(id) != null) {
       const json = sessionStorage.getItem(id);
       const recipe = JSON.parse(json);
       this.setState({ recipe });
@@ -33,7 +34,6 @@ class RecipeProvider extends Component {
         `https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}`
       );
       const data = await response.json();
-      console.log(data);
 
       const transformedData = {
         ...data,
@@ -61,14 +61,9 @@ class RecipeProvider extends Component {
         };
       },
       () => {
-        const recipe = this.state.recipe;
         const favourites = this.state.favourites;
-        let jsonrec = JSON.parse(localStorage.getItem(id));
-        let json = JSON.parse(localStorage.getItem(id));
-        // if (json != null && jsonrec != null) {
-        //   json.push(favourites);
-        //   jsonrec.push(recipe);
-        // }
+        const recipe = this.state.recipe;
+
         localStorage.setItem("favourites", JSON.stringify(favourites));
         localStorage.setItem(id, JSON.stringify(recipe));
       }
@@ -91,52 +86,35 @@ class RecipeProvider extends Component {
     favourites = favourites.filter(item => item.id !== id);
 
     localStorage.setItem("favourites", JSON.stringify(favourites));
-    localStorage.setItem(id, JSON.stringify(recipe));
+    localStorage.removeItem(id);
 
     this.setState(() => {
       return { favourites, recipe };
     });
   };
 
-  getIngredient = name => {
+  getIngredient = id => {
     const ingredient = this.state.recipe.extendedIngredients.find(
-      ingredient => ingredient.name === name
+      ingredient => ingredient.id === id
     );
     return ingredient;
   };
 
-  addToCart = name => {
+  addToCart = id => {
     let ingredients = [...this.state.recipe.extendedIngredients];
-    const index = ingredients.indexOf(this.getIngredient(name));
+    const index = ingredients.indexOf(this.getIngredient(id));
     const ingredient = ingredients[index];
-    ingredient.inCart = true;
-    console.log(ingredient.inCart);
+
     this.setState(
       () => {
         return {
           ingredients,
-          cart: [...this.state.cart, ingredient],
-          recipe: this.state.recipe
+          cart: [...this.state.cart, ingredient]
         };
       },
       () => {
         const cart = this.state.cart;
-        const recipe = this.state.recipe;
-        const recipeId = this.state.recipe.id;
-        console.log(recipeId);
-
-        const json = JSON.parse(localStorage.getItem("cart"));
-        const jsonrec = JSON.parse(localStorage.getItem(recipeId));
-        console.log(jsonrec);
-
-        // if (json != null && jsonrec != null) {
-        //   json.push(cart);
-        //   jsonrec.push(recipe);
-        //   console.log(jsonrec);
-        // }
         localStorage.setItem("cart", JSON.stringify(cart));
-        localStorage.setItem(recipeId, JSON.stringify(recipe));
-        console.log(recipe);
       }
     );
   };
@@ -149,28 +127,14 @@ class RecipeProvider extends Component {
     }
   };
 
-  // setIngredients = () => {
-  //   const cart = JSON.stringify(this.state.cart);
-  //   localStorage.setItem("cart", cart);
-  // };
-
-  removeFromCart = name => {
+  removeFromCart = id => {
     let cart = [...this.state.cart];
-    const recipe = this.state.recipe;
-    const recipeId = this.state.recipe.id;
-    let ingredients = [...this.state.recipe.extendedIngredients];
-
-    cart = cart.filter(item => item.name !== name);
-    const index = ingredients.indexOf(this.getIngredient(name));
-    const ingredient = ingredients[index];
-    ingredient.inCart = false;
-    console.log(ingredient.inCart);
+    cart = cart.filter(item => item.id !== id);
 
     localStorage.setItem("cart", JSON.stringify(cart));
-    localStorage.setItem(recipeId, JSON.stringify(recipe));
 
     this.setState(() => {
-      return { cart, recipe };
+      return { cart };
     });
   };
 

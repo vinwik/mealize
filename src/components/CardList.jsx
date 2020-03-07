@@ -1,14 +1,13 @@
-import React, { useEffect, useContext } from "react";
+import React /*, { useEffect, useContext }*/ from "react";
 // import styled from "styled-components";
 import { ReactComponent as Like } from "../assets/heart.svg";
 
 import { Link } from "react-router-dom";
 import { RecipesConsumer } from "../RecipesContext";
-import { RecipeContext } from "../RecipeContext";
-import { RecipeConsumer } from "../RecipeContext";
+// import { RecipeContext } from "../RecipeContext";
 
 const CardList = () => {
-  const context = useContext(RecipeContext);
+  // const context = useContext(RecipeContext);
 
   // useEffect(() => {
   //   context.parseFavourites();
