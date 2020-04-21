@@ -4,20 +4,20 @@ import React, { Component, createContext } from "react";
 
 export const RecipeContext = createContext();
 
-const API_KEY = "a8a6c56864bd498da56e9de550c0a580";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 class RecipeProvider extends Component {
   state = {
     recipe: {
       extendedIngredients: [],
-      steps: []
+      steps: [],
     },
     favourites: [],
-    cart: []
+    cart: [],
   };
 
   //Fired by Recipe.jsx
-  getRecipe = async id => {
+  getRecipe = async (id) => {
     //GET RECIPE FROM LOCAL STORAGE
     if (localStorage.getItem(id) != null) {
       const json = localStorage.getItem(id);
@@ -39,7 +39,7 @@ class RecipeProvider extends Component {
         ...data,
         steps: data.analyzedInstructions.length
           ? data.analyzedInstructions[0].steps
-          : []
+          : [],
       };
 
       this.setState({ recipe: transformedData });
@@ -50,14 +50,14 @@ class RecipeProvider extends Component {
     }
   };
 
-  addToFavourites = id => {
+  addToFavourites = (id) => {
     let favourites = this.state.recipe;
     favourites.inFavourite = true;
     this.setState(
       () => {
         return {
           favourites: [...this.state.favourites, favourites],
-          recipe: this.state.recipe
+          recipe: this.state.recipe,
         };
       },
       () => {
@@ -78,12 +78,12 @@ class RecipeProvider extends Component {
     }
   };
 
-  removeFromFavourites = id => {
+  removeFromFavourites = (id) => {
     let favourites = [...this.state.favourites];
     const recipe = this.state.recipe;
     recipe.inFavourite = false;
 
-    favourites = favourites.filter(item => item.id !== id);
+    favourites = favourites.filter((item) => item.id !== id);
 
     localStorage.setItem("favourites", JSON.stringify(favourites));
     localStorage.removeItem(id);
@@ -93,14 +93,14 @@ class RecipeProvider extends Component {
     });
   };
 
-  getIngredient = id => {
+  getIngredient = (id) => {
     const ingredient = this.state.recipe.extendedIngredients.find(
-      ingredient => ingredient.id === id
+      (ingredient) => ingredient.id === id
     );
     return ingredient;
   };
 
-  addToCart = id => {
+  addToCart = (id) => {
     let ingredients = [...this.state.recipe.extendedIngredients];
     const index = ingredients.indexOf(this.getIngredient(id));
     const ingredient = ingredients[index];
@@ -109,7 +109,7 @@ class RecipeProvider extends Component {
       () => {
         return {
           ingredients,
-          cart: [...this.state.cart, ingredient]
+          cart: [...this.state.cart, ingredient],
         };
       },
       () => {
@@ -127,9 +127,9 @@ class RecipeProvider extends Component {
     }
   };
 
-  removeFromCart = id => {
+  removeFromCart = (id) => {
     let cart = [...this.state.cart];
-    cart = cart.filter(item => item.id !== id);
+    cart = cart.filter((item) => item.id !== id);
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
@@ -151,7 +151,7 @@ class RecipeProvider extends Component {
           addToCart: this.addToCart,
           setIngredients: this.setIngredients,
           parseIngredients: this.parseIngredients,
-          removeFromCart: this.removeFromCart
+          removeFromCart: this.removeFromCart,
         }}
       >
         {this.props.children}

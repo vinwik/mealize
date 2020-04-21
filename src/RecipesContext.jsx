@@ -2,14 +2,14 @@ import React, { Component, createContext } from "react";
 
 export const RecipesContext = createContext();
 
-const API_KEY = "a8a6c56864bd498da56e9de550c0a580";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 class RecipesProvider extends Component {
   state = {
-    recipes: []
+    recipes: [],
   };
 
-  getRecipes = async e => {
+  getRecipes = async (e) => {
     const searchInput = e.target.elements.searchInput.value;
     e.preventDefault();
 
@@ -44,7 +44,7 @@ class RecipesProvider extends Component {
       <RecipesContext.Provider
         value={{
           ...this.state,
-          getSearch: this.getRecipes
+          getSearch: this.getRecipes,
         }}
       >
         {this.props.children}
